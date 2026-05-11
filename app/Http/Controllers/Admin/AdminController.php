@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 
 use App\Models\User;
 use App\Models\Song;
-
 use App\Models\ActivityLog;
 
 class AdminController extends Controller

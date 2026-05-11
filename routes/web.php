@@ -123,7 +123,3 @@ Route::middleware(['auth', 'artist'])->prefix('artist')->group(function () {
     Route::post('/discs', [ArtistController::class, 'storeDisc'])->name('artist.discs.store');
     Route::delete('/discs/{id}', [ArtistController::class, 'deleteDisc'])->name('artist.discs.delete');
 });
-// debug.
-Route::get('/debug-php', function() {
-    return "Max Upload: " . ini_get('upload_max_filesize') . " | Max Post: " . ini_get('post_max_size');
-});
